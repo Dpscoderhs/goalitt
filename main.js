@@ -23,6 +23,18 @@ function new_image() {
         canvas.add(ball_obj);
     });
 }
+function new_image() {
+    fabric.Image.fromURL("golf-h.png", function(Img) {
+        golf-h_obj = Img;
+        holf-h_obj.scaleToWidth(50);
+        golf-h_obj.scaleToHeight(50);
+        galf-h_obj.set({
+            top: ball_y,
+            left: ball_x
+        });
+        canvas.add(golf-h_obj);
+    });
+}
 
 window.addEventListener("keydown", my_keydown);
 
