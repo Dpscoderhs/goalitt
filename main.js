@@ -25,6 +25,20 @@ function new_image() {
     
 }
 
+function new_image() {
+    fabric.Image.fromURL("golf-h.png", function(Img) {
+        hole_obj = Img;
+        hole_obj.scaleToWidth(50);
+        hole_obj.scaleToHeight(50);
+        hole_obj.set({
+            top: hole_y,
+            left: hole_x
+        });
+        canvas.add(hole_obj);
+    });
+    
+}
+
 window.addEventListener("keydown", my_keydown);
 
 function my_keydown(e) {
